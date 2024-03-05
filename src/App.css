@@ -2,14 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @layer components {
-  .bg_container{
+  .bg_container {
     background-color: black;
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
-  .border_color{
+  .border_color {
     display: flex;
     padding: 5px;
     border: 1px solid white;
@@ -17,9 +26,8 @@
     padding-right: 15px;
     border-radius: 20px;
     align-items: center;
-
   }
-  .border_color2{
+  .border_color2 {
     display: flex;
     padding: 5px;
     padding-left: 15px;
@@ -28,16 +36,63 @@
     align-items: center;
     background-color: white;
     color: black;
-
   }
 
-  .border_color2:hover{
+  .border_color2:hover {
     background-color: rgb(108, 12, 12);
     color: white;
   }
 
-  .pdf_icon:hover{
-color: white;
+  .pdf_icon:hover {
+    color: white;
+  }
+
+  .dev_title {
+    font-size: 210px;
+    color: white;
+    line-height: 250px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: bold;
+    color: rgb(215, 215, 215);
+  }
+
+  .font_fam{
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 116px;
+  }
+
+  .image_style {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+  .first_hr {
+    border-top: 0;
+    border-bottom: 3px solid rgb(108, 12, 12);
+    width: 60px;
+    margin-left: 10px;
+
+  }
+
+  .primary_redd{
+    color: rgb(108, 12, 12);
+  }
+
+  .project_content{
+    display: flex;
+    width: 100%;
+  }
+
+  .project_content_div1{
+    width: 50%;
+  }
+
+  .project_content_div2{
+    width: 50%;
+    background-color: white;
+    height: 350px;
+    
   }
 }
-
