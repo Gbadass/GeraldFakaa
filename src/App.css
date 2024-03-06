@@ -134,30 +134,14 @@
     color: rgb(209, 209, 209);
   }
 
-  .center_container {
-    width: 100%;
-    /* border: 1px solid white; */
-    display: flex;
-    justify-content: space-around;
-    margin: auto 0;
-    height: auto;
-    /* padding-left: 200px;
-    padding-right: 200px; */
-    margin-top: 30px;
-    background-color: black;
-  }
-
-  .center_container_div1 {
-    width: 38%;
-  }
-
-  .center_container_div2 {
-    width: 38%;
-  }
-
   .skill_hr {
     border-top: none;
     border-bottom: 1px solid white;
+  }
+
+  .skill_content {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .picture_frame {
@@ -168,7 +152,7 @@
   }
 
   .inquires_section {
-    margin-top: 250px;
+    margin-top: 200px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -197,7 +181,7 @@
     overflow: scroll;
   }
 
-  .section_one{
+  .section_one {
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
@@ -221,14 +205,14 @@
       color: rgb(209, 209, 209);
       text-align: center;
       margin: 0 auto;
-      padding-top:30px;
+      padding-top: 30px;
     }
 
     .image_style_div {
       margin-top: 50px;
     }
 
-    .section_one{
+    .section_one {
       display: grid;
       grid-template-columns: 1fr;
     }
@@ -244,22 +228,40 @@
       font-size: 70px;
       line-height: 120px;
     }
-  
 
     .project_content_div2 {
       width: 100%;
       background-color: white;
       height: 210px;
-      padding: 20px;
+      padding: 10px;
       margin-top: 50px;
     }
 
-    .project_content_div2 img{
+    .project_content_div2 img {
       width: 100%;
       height: 100%;
     }
 
+    .skill_content {
+      padding: 0;
+      gap: 20px;
+    }
 
+    .picture_frame {
+      margin-top: 30px;
+      height: 400px;
+      width: 100%;
+      background-color: white;
+    }
+
+    .inquires_section_p {
+      width: 100%;
+    }
+
+    .inquires_section {
+      margin-top: 110px;
+
+    }
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
@@ -280,37 +282,53 @@
       text-align: right;
     }
 
-    .image_style_div{
+    .image_style_div {
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 0 auto;
-      
     }
 
-    .section_one{
+    .project_content_div2 {
+      width: 100%;
+      background-color: white;
+      height: 370px;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .project_content_div2 img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .section_one {
       display: grid;
       grid-template-columns: 1fr;
     }
 
-    .image_style_div{
+    .image_style_div {
       margin-top: 50px;
     }
 
-    .bio_details{
+    .bio_details {
       margin-top: 30px;
       width: 40%;
       margin: 0 auto;
     }
 
-  }
-
-/*   
-  @media (min-width: 800px) and (max-width: 1280px) {
-    .section_one{
-      display: grid;
-      grid-template-columns: 2fr 1fr;
+    .skill_content {
+      padding: 0;
     }
-  } */
 
+    .inquires_section_p {
+      width: 100%;
+    }
+
+
+    .inquires_section {
+      margin-top: 110px;
+
+    }
+  }
 }

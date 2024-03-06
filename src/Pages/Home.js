@@ -56,13 +56,13 @@ function Home() {
 
         </section>
 
-        <section className="mt-20 grid sm:grid-cols-1 ">
+        <section className="mt-20 grid sm:grid-cols-1">
           <h1 className="text-white">FEATURED/PERSONAL PROJECT[5]</h1>
           <hr className="mt-8" />
           <div className="project_content grid sm:grid-cols-1 lg:grid-cols-2 p-4">
             <div className="project_content_div1">
               <h1 className="text-white font_fam">JOBLANCE</h1>
-              <h3 className="text_color text-sm  lg:mt-5 lg:w-full md:w-full sm:w-full">
+              <h3 className="text_color text-sm lg:mt-5 lg:w-full md:w-full sm:w-full">
                 Discover a revolutionary platform for effortlessly finding job
                 opportunities and securing employment. Our platform seamlessly
                 combines cutting-edge technology with user-friendly simplicity,
@@ -145,8 +145,8 @@ function Home() {
           <hr className="mt-8" />
         </section>
 
-        <section className="center_container mt-32">
-          <div className="center_container_div1">
+        <section className="skill_content grid gap-24 sm:grid-cols-1 lg:grid-cols-2 mt-32 ">
+          <div className="">
             <h1 className="text-white text-xl">MAJOR SKILLS[12]</h1>
 
             <div className="flex items-center justify-between mt-5">
@@ -210,7 +210,7 @@ function Home() {
             </div>
             <hr className="skill_hr mt-2" />
           </div>
-          <div className="center_container_div2">
+          <div className="">
             <h1 className="text-white text-xl">MY HOBBIES/INTEREST</h1>
 
             <p className="text-white mt-5">
