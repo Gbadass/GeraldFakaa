@@ -14,10 +14,13 @@ function Home() {
     <>
       <div className="bg_container">
         <nav className="md_nav_style p-4 w-full grid lg:grid-cols-3 md:grid-cols-1 flex-col justify-between items-center sm:flex-row">
-          <h3 className="md_h3_style text-white  whitespace-nowrap">OPEN FOR FREELANCE OPPORTUNITIES</h3>
-          <h3 className="md_h3_style2 text-white lg:mt-0 sm:mt-5 order-3 sm:order-2 md:mt-0">GERALD FAKAA PORTFOLIO/2023-2024</h3>
-          <div
-            className="md_lastdiv_style flex justify-evenly items-center lg:mt-0 sm:mt-5 order-2 sm:order-3">
+          <h3 className="md_h3_style text-white  whitespace-nowrap">
+            OPEN FOR FREELANCE OPPORTUNITIES
+          </h3>
+          <h3 className="md_h3_style2 text-white lg:mt-0 sm:mt-5 order-3 sm:order-2 md:mt-0">
+            GERALD FAKAA PORTFOLIO/2023-2024
+          </h3>
+          <div className="md_lastdiv_style flex justify-evenly items-center lg:mt-0 sm:mt-5 order-2 sm:order-3">
             <BiHeadphone className="text-2xl text-white" />
             <div className="border_color ml-5">
               <p className="text-white text-l">Dark</p>
@@ -31,7 +34,7 @@ function Home() {
         </nav>
         <section className="section_one">
           <div className="">
-          <h1 className="dev_title">FULLSTACK DEVELOPER</h1>
+            <h1 className="dev_title">FULLSTACK DEVELOPER</h1>
           </div>
 
           <div className="ml-10">
@@ -53,7 +56,6 @@ function Home() {
               </h3>
             </div>
           </div>
-
         </section>
 
         <section className="mt-20 grid sm:grid-cols-1">
@@ -232,11 +234,30 @@ function Home() {
             to discuss new opportunities.
           </h1>
         </section>
-        <hr className="text-white inquiry_hr" />
+        <hr className="text-white inquiry_hr2" />
         <section className="COLLABORATE_div">
-          <h1 className="COLLABORATE_p">TRYNA COLLABORATE? REACH OUT....</h1>
+          <h1 className="COLLABORATE_p">TRYNA COLLABORATE ? REACH OUT....</h1>
         </section>
         <hr className="inquiry_hr" />
+
+        <section className="socials_section grid grid-cols-4 mt-20 gap-10">
+          <div>
+            <h3 className="text_color text-center">GITHUB</h3>
+            <hr className="socials_section_hr" />
+          </div>
+          <div>
+            <h3 className="text_color text-center">LINKDEN</h3>
+            <hr className="socials_section_hr" />
+          </div>
+          <div>
+            <h3 className="text_color text-center">TWITTER</h3>
+            <hr className="socials_section_hr" />
+          </div>
+          <div>
+            <h3 className="text_color text-center">INSTAGRAM</h3>
+            <hr className="socials_section_hr" />
+          </div>
+        </section>
       </div>
     </>
   );
