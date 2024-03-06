@@ -13,11 +13,11 @@ function Home() {
   return (
     <>
       <div className="bg_container">
-        <nav className="p-4 w-full flex flex-col justify-between  items-center sm:flex-row">
-          <h3 className="text-white  whitespace-nowrap">OPEN FOR FREELANCE OPPORTUNITIES</h3>
-          <h3 className="text-white lg:mt-0 sm:mt-5 order-3 sm:order-2">GERALD FAKAA PORTFOLIO/2023-2024</h3>
+        <nav className="md_nav_style p-4 w-full grid lg:grid-cols-3 md:grid-cols-1 flex-col justify-between items-center sm:flex-row">
+          <h3 className="md_h3_style text-white  whitespace-nowrap">OPEN FOR FREELANCE OPPORTUNITIES</h3>
+          <h3 className="md_h3_style2 text-white lg:mt-0 sm:mt-5 order-3 sm:order-2 md:mt-0">GERALD FAKAA PORTFOLIO/2023-2024</h3>
           <div
-            className="flex justify-evenly items-center lg:mt-0 sm:mt-5 order-2 sm:order-3">
+            className="md_lastdiv_style flex justify-evenly items-center lg:mt-0 sm:mt-5 order-2 sm:order-3">
             <BiHeadphone className="text-2xl text-white" />
             <div className="border_color ml-5">
               <p className="text-white text-l">Dark</p>
@@ -29,14 +29,17 @@ function Home() {
             </div>
           </div>
         </nav>
-        <section className="flex flex-col sm:flex-row mt-4">
+        <section className="section_one">
+          <div className="">
           <h1 className="dev_title">FULLSTACK DEVELOPER</h1>
+          </div>
+
           <div className="ml-10">
             <div className="image_style_div">
               <img src={geraldfakaa} className="image_style" alt="" />
             </div>
 
-            <div>
+            <div className="bio_content bio_details">
               <div className="flex items-center mt-6">
                 <h3 className="primary_redd font-bold">ABOUT ME</h3>
                 <hr className="first_hr" />
@@ -51,16 +54,15 @@ function Home() {
             </div>
           </div>
 
-          <div></div>
         </section>
 
-        <section className="mt-20">
+        <section className="mt-20 grid sm:grid-cols-1 ">
           <h1 className="text-white">FEATURED/PERSONAL PROJECT[5]</h1>
           <hr className="mt-8" />
-          <div className="project_content flex p-4">
+          <div className="project_content grid sm:grid-cols-1 lg:grid-cols-2 p-4">
             <div className="project_content_div1">
-              <h1 className="text-white font_fam ">JOBLANCE</h1>
-              <h3 className="text_color text-sm w-4/5 mt-8">
+              <h1 className="text-white font_fam">JOBLANCE</h1>
+              <h3 className="text_color text-sm  lg:mt-5 lg:w-full md:w-full sm:w-full">
                 Discover a revolutionary platform for effortlessly finding job
                 opportunities and securing employment. Our platform seamlessly
                 combines cutting-edge technology with user-friendly simplicity,
@@ -84,10 +86,10 @@ function Home() {
             </div>
           </div>
           <hr className="mt-8" />
-          <div className="project_content flex p-4">
+          <div className="project_content grid sm:grid-cols-1 lg:grid-cols-2 p-4">
             <div className="project_content_div1">
-              <h1 className="text-white font_fam2">SOFTWASH LUANDRY</h1>
-              <h3 className="text_color text-sm w-4/5 mt-8">
+              <h1 className=" text-white font_fam2">SOFTWASH LUANDRY</h1>
+              <h3 className="text_color text-sm sm:mt-5 lg:mt-5 lg:w-full md:w-full">
                 Experience the convenience of managing your laundry with our
                 revolutionary platform. Our application seamlessly blends
                 cutting-edge technology with user-friendly simplicity,
@@ -113,10 +115,10 @@ function Home() {
           </div>
 
           <hr className="mt-8" />
-          <div className="project_content flex p-4">
+          <div className="project_content grid sm:grid-cols-1 lg:grid-cols-2 p-4">
             <div className="project_content_div1">
-              <h1 className="text-white font_fam2">CINETUBE</h1>
-              <h3 className="text_color text-sm w-4/5 mt-8">
+              <h1 className=" text-white font_fam2">CINETUBE</h1>
+              <h3 className="text_color lg:mt-5 text-sm sm:mt-5 lg:w-full md:w-full">
                 Embark on a cinematic journey like never before with our movie
                 recommendation platform. Discover a revolutionary platform that
                 seamlessly blends cutting-edge technology with user-friendly
