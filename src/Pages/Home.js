@@ -11,6 +11,7 @@ import geraldfakaa from "../Images/geraldfakaa.jpeg";
 import geraldfakaa2 from "../Images/WhatsApp Image 2024-02-23 at 11.42.26 AM.jpeg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import pDF from "../PDF/ResumeFakaaGerald.PDF"
 
 function Home() {
   const [mode, setMode] = useState();
@@ -40,16 +41,18 @@ function Home() {
                 {darkMode ? "Light" : "Dark"}
               </p>
               {darkMode ? (
-                <BiMoon className="text_gen_color text-3xl" />
+                <FaBolt className="text_gen_color text-3xl" />
               ) : (
-                <FaBolt className="text-white text-3xl" />
+                < BiMoon className="text-white text-3xl" />
               )}
             </div>
-
-            <div className="border_color2 ml-5">
+<a  href={pDF} target="_blank">
+<div className="border_color2 ml-5">
               <p className="text-l whitespace-nowrap">My Resume</p>
               <BiSolidFilePdf className="pdf_icon text-xl" />
             </div>
+</a>
+
           </div>
         </nav>
         <section className="section_one mt-10">
@@ -249,7 +252,7 @@ function Home() {
             <h1 className="text_gen_color text-xl">MY HOBBIES/INTEREST</h1>
 
             <p className="text_gen_color mt-5">
-              Beyond my professional pursuits, I engage in designing and
+              Beyond my professional pursuits, I engage in designing clothes and
               showcase my creative skills. Outside of work, I have a passion for
               playing basketball and video games ; collaborating with me ensures
               these endeavors are sustained. Feel free to GET IN TOUCH for more
@@ -269,7 +272,8 @@ function Home() {
         </section>
         <hr className="hr_color mt-10" />
         <section className="COLLABORATE_div">
-          <h1 className="COLLABORATE_p">TRYNA COLLABORATE ? REACH OUT....</h1>
+          
+          <h1 className="COLLABORATE_p" > <a href="mailto:geraldfakaa1@gmail.com">TRYNA COLLABORATE ? REACH OUT....</a> </h1>
         </section>
         <hr className="hr_color" />
 
