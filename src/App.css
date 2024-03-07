@@ -8,9 +8,30 @@
   box-sizing: border-box;
 }
 
+*{
+  transition: all 0.3s ease-in-out;
+}
+
+:root{
+  --body_background:black;
+  --body_color:rgb(209, 209, 209);
+  --link_color:rgb(108, 12, 12);
+  --button_bgcolor:white;
+  --button_color:black;
+}
+
+[data-theme="dark"] {
+  --body_background:white;
+  --body_color:black;
+  --link_color:rgba(8, 8, 46, 0.649);
+  --button_bgcolor:black;
+  --button_color:white;
+
+}
+
 @layer components {
   .bg_container {
-    background-color: black;
+    background-color: var(--body_background);
     width: 100vw;
     height: auto;
     min-height: 100vh;
@@ -20,10 +41,15 @@
     padding-bottom: 30px;
   }
 
+
+  .resume_color{
+    color: var(--button_bgcolor);
+  }
+
   .border_color {
     display: flex;
     padding: 5px;
-    border: 1px solid white;
+    border: 1px solid var(--body_color);
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 20px;
@@ -36,8 +62,8 @@
     padding-right: 15px;
     border-radius: 20px;
     align-items: center;
-    background-color: white;
-    color: black;
+    background-color: var(--button_bgcolor);
+    color: var(--button_color);
   }
 
   .border_color2:hover {
@@ -46,17 +72,29 @@
   }
 
   .pdf_icon:hover {
-    color: white;
+    color: var(--button_color);
   }
 
   .dev_title {
     width: 80%;
-    font-size: 210px;
+    font-size: 200px;
     color: white;
-    line-height: 250px;
+    line-height: 230px;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-weight: bold;
-    color: rgb(209, 209, 209);
+    color: var(--body_color);
+  }
+
+  .text_gen_color{
+    color: var(--body_color);
+  }
+
+  .dev_title_span2:hover{
+    color: var(--link_color);
+  }
+
+  .dev_title_span:hover{
+    color: var(--link_color);
   }
 
   .font_fam {
@@ -72,11 +110,11 @@
   }
 
   .font_fam2:hover {
-    color: rgb(108, 12, 12);
+    color: var(--link_color);
   }
 
   .font_fam:hover {
-    color: rgb(108, 12, 12);
+    color: var(--link_color);
   }
 
   .image_style {
@@ -105,6 +143,11 @@
     margin-left: 10px;
   }
 
+  .hr_color{
+border-top: none;
+border-bottom: 1px solid var(--body_color);
+  }
+
   .primary_redd {
     color: rgb(108, 12, 12);
   }
@@ -120,7 +163,7 @@
 
   .project_content_div2 {
     width: 100%;
-    background-color: white;
+    background-color: var(--button_bgcolor);
     height: 350px;
     padding: 20px;
   }
@@ -149,7 +192,7 @@
     margin-top: 30px;
     height: 400px;
     width: 400px;
-    background-color: white;
+    background-color: var(--button_bgcolor);
   }
 
   .inquires_section {
@@ -177,10 +220,11 @@
   }
 
   .COLLABORATE_p {
-    font-size: 200px;
-    color: white;
+    font-size: 170px;
+    color: var(--button_bgcolor);
     white-space: nowrap;
     animation: moveText 10s linear infinite;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   }
 
 
@@ -196,7 +240,13 @@
 
   .socials_section_hr{
     border-top: none;
+    width: auto;
     border-bottom: 1px solid white;
+  }
+
+  .socails_border{
+    border-bottom: 1px solid var(--button_bgcolor);
+    padding-bottom: 5px;
   }
 
   @keyframes moveText {
@@ -215,10 +265,10 @@
       line-height: 55px;
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
       font-weight: bold;
-      color: rgb(209, 209, 209);
+      color: var(--button_bgcolor);
       text-align: center;
       margin: 0 auto;
-      padding-top: 30px;
+      padding-top: 10px;
     }
 
     .image_style_div {
@@ -244,7 +294,7 @@
 
     .project_content_div2 {
       width: 100%;
-      background-color: white;
+      background-color: var(--button_bgcolor);
       height: 210px;
       padding: 10px;
       margin-top: 50px;
@@ -264,7 +314,7 @@
       margin-top: 30px;
       height: 400px;
       width: 100%;
-      background-color: white;
+      background-color: var(--button_bgcolor);
     }
 
     .inquires_section_p {
@@ -276,10 +326,9 @@
 
     }
 
-
   .COLLABORATE_p {
     font-size: 60px;
-    color: white;
+    color: var(--button_bgcolor);
     white-space: nowrap;
     animation: moveText 10s linear infinite;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -287,16 +336,22 @@
     margin-bottom: 10px;
   }
 
+
+  .socials_section{
+    width: 100%;
+    margin: 0 auto;
+  }
+
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
     .dev_title {
       font-size: 80px;
-      color: white;
+      /* color: white; */
       line-height: 85px;
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
       font-weight: bold;
-      color: rgb(209, 209, 209);
+      color: var(--body_color);
       text-align: center;
       padding-top: 30px;
       width: 40%;
@@ -316,7 +371,7 @@
 
     .project_content_div2 {
       width: 100%;
-      background-color: white;
+      background-color: var(--button_bgcolor);
       height: 370px;
       padding: 20px;
       margin-top: 50px;
@@ -355,5 +410,22 @@
       margin-top: 110px;
 
     }
+
+    .socials_section_hr{
+      border-top: none;
+      width: auto;
+      border-bottom: 1px solid white;
+    }
+
+    .COLLABORATE_p{
+      font-size: 70px;
+      color: var(--button_bgcolor);
+      white-space: nowrap;
+      animation: moveText 10s linear infinite;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
   }
 }
