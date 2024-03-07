@@ -11,7 +11,7 @@ import geraldfakaa from "../Images/geraldfakaa.jpeg";
 import geraldfakaa2 from "../Images/WhatsApp Image 2024-02-23 at 11.42.26 AM.jpeg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import pDF from "../PDF/ResumeFakaaGerald.PDF"
+import pDF from "../PDF/ResumeFakaaGerald.PDF";
 
 function Home() {
   const [mode, setMode] = useState();
@@ -43,16 +43,15 @@ function Home() {
               {darkMode ? (
                 <FaBolt className="text_gen_color text-3xl" />
               ) : (
-                < BiMoon className="text-white text-3xl" />
+                <BiMoon className="text-white text-3xl" />
               )}
             </div>
-<a  href={pDF} target="_blank">
-<div className="border_color2 ml-5">
-              <p className="text-l whitespace-nowrap">My Resume</p>
-              <BiSolidFilePdf className="pdf_icon text-xl" />
-            </div>
-</a>
-
+            <a href={pDF} target="_blank">
+              <div className="border_color2 ml-5">
+                <p className="text-l whitespace-nowrap">My Resume</p>
+                <BiSolidFilePdf className="pdf_icon text-xl" />
+              </div>
+            </a>
           </div>
         </nav>
         <section className="section_one mt-10">
@@ -272,8 +271,12 @@ function Home() {
         </section>
         <hr className="hr_color mt-10" />
         <section className="COLLABORATE_div">
-          
-          <h1 className="COLLABORATE_p" > <a href="mailto:geraldfakaa1@gmail.com">TRYNA COLLABORATE ? REACH OUT....</a> </h1>
+          <h1 className="COLLABORATE_p">
+            {" "}
+            <a href="mailto:geraldfakaa1@gmail.com">
+              TRYNA COLLABORATE ? REACH OUT....
+            </a>{" "}
+          </h1>
         </section>
         <hr className="hr_color" />
 
@@ -282,19 +285,27 @@ function Home() {
             to="https://github.com/Gbadass?tab=repositories"
             target="_blank"
           >
-            <h3 className="socails_border text_gen_color text-center">GITHUB</h3>
+            <h3 className="socails_border text_gen_color text-center">
+              GITHUB
+            </h3>
           </Link>
           <Link
             to="https://www.linkedin.com/in/gerald-fakaa-ba9608266/"
             target="_blank"
           >
-            <h3 className="socails_border text_gen_color text-center">LINKDEN</h3>
+            <h3 className="socails_border text_gen_color text-center">
+              LINKDEN
+            </h3>
           </Link>
           <Link to="https://twitter.com/_Gbadass" target="_blank">
-            <h3 className="socails_border text_gen_color text-center">TWITTER</h3>
+            <h3 className="socails_border text_gen_color text-center">
+              TWITTER
+            </h3>
           </Link>
           <Link to="" target="_blank">
-            <h3 className="socails_border text_gen_color text-center">INSTAGRAM</h3>
+            <h3 className="socails_border text_gen_color text-center">
+              INSTAGRAM
+            </h3>
           </Link>
         </section>
       </div>
