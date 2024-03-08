@@ -83,7 +83,7 @@ function Home() {
         </section>
 
         <section className="mt-20 grid sm:grid-cols-1">
-          <h1 className="text_gen_color">FEATURED/PERSONAL PROJECT[5]</h1>
+          <h1 className="text_gen_color">FEATURED/PERSONAL PROJECT[3]</h1>
           <hr className="hr_color mt-8" />
           <div className="project_content grid sm:grid-cols-1 lg:grid-cols-2 p-4">
             <div className="project_content_div1">
