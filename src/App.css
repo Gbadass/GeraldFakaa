@@ -29,6 +29,11 @@
 }
 
 @layer components {
+
+  .selectedtextstyle{
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+
   .bg_container {
     background-color: var(--body_background);
     width: 100vw;

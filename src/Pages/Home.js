@@ -61,8 +61,8 @@ function Home() {
         </nav>
         <section className="section_one mt-10">
           <div className="dev_title_container">
-            <h1 className="dev_title">
-              <span className="dev_title_span">FULLSTACK</span>{" "}
+            <h1 className="dev_title selectedtextstyle">
+              <span className="dev_title_span ">FULLSTACK</span>{" "}
               <span className="dev_title_span2">DEVELOPER</span>{" "}
             </h1>
           </div>
@@ -93,7 +93,7 @@ function Home() {
           <hr className="hr_color mt-8" />
           <div className="project_content grid sm:grid-cols-1 lg:grid-cols-2 p-4">
             <div className="project_content_div1">
-              <h1 className="text_gen_color font_fam">JOBLANCE</h1>
+              <h1 className="text_gen_color font_fam selectedtextstyle">JOBLANCE</h1>
 
               <h3 className="text_gen_color text-sm lg:mt-5 lg:w-full md:w-full sm:w-full">
                 Discover a revolutionary platform for effortlessly finding job
@@ -124,7 +124,7 @@ function Home() {
           <hr className="hr_color mt-8" />
           <div className="project_content grid sm:grid-cols-1 lg:grid-cols-2 p-4">
             <div className="project_content_div1">
-              <h1 className="text_gen_color font_fam2">SOFTWASH LUANDRY</h1>
+              <h1 className="text_gen_color font_fam2 selectedtextstyle">SOFTWASH LUANDRY</h1>
 
               <h3 className="text_gen_color text-sm sm:mt-5 lg:mt-5 lg:w-full md:w-full">
                 Experience the convenience of managing your laundry with our
@@ -156,7 +156,7 @@ function Home() {
           <hr className="hr_color mt-8" />
           <div className="project_content grid sm:grid-cols-1 lg:grid-cols-2 p-4">
             <div className="project_content_div1">
-              <h1 className="text_gen_color font_fam2">CINETUBE</h1>
+              <h1 className="text_gen_color font_fam2 selectedtextstyle">CINETUBE</h1>
               <h3 className="text_gen_color lg:mt-5 text-sm sm:mt-5 lg:w-full md:w-full">
                 Embark on a cinematic journey like never before with our movie
                 recommendation platform. Discover a revolutionary platform that
