@@ -39,7 +39,7 @@ function Home() {
           <h3 className="md_h3_style2 text_gen_color lg:mt-0 sm:mt-5 order-3 sm:order-2 md:mt-0">
             GERALD FAKAA PORTFOLIO/2023-2024
           </h3>
-          <div className="md_lastdiv_style flex justify-evenly items-center lg:mt-0 sm:mt-5 order-2 sm:order-3">
+          <div className="md_lastdiv_style flex justify-evenly items-center lg:mt-0  order-2 sm:order-3">
             <BiHeadphone className="text-2xl resume_color" />
             <div className="border_color ml-5" onClick={toggleTheme}>
               <p className="text_gen_color text-l">
