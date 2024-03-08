@@ -54,14 +54,14 @@ function Home() {
           </div>
         </nav>
         <section className="section_one mt-10">
-          <div className="">
+          <div className="dev_title_container">
             <h1 className="dev_title">
               <span className="dev_title_span">FULLSTACK</span>{" "}
               <span className="dev_title_span2">DEVELOPER</span>{" "}
             </h1>
           </div>
 
-          <div className="ml-10">
+          <div className="lg:ml-10">
             <div className="image_style_div">
               <img src={geraldfakaa} className="image_style" alt="" />
             </div>
@@ -71,7 +71,7 @@ function Home() {
                 <h3 className="primary_redd font-bold">ABOUT ME</h3>
                 <hr className="first_hr" />
               </div>
-              <h3 className="text_gen_color text-sm">
+              <h3 className="text_gen_color  text-sm">
                 I am fullstack developer based in Abuja, Nigeria, I bring a
                 wealth of experience in crafting sophisticated and interactive
                 digital experiences on the web. My expertise spans both frontend
