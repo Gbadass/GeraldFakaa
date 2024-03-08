@@ -33,7 +33,7 @@ function Home() {
     <>
       <div className="bg_container">
         <nav className="md_nav_style p-4 w-full grid lg:grid-cols-3 md:grid-cols-1 flex-col justify-between items-center sm:flex-row">
-          <h3 className="md_h3_style text_gen_color  whitespace-nowrap">
+          <h3 className="text_gen_color  whitespace-nowrap">
             OPEN FOR FREELANCE OPPORTUNITIES
           </h3>
           <h3 className="md_h3_style2 text_gen_color lg:mt-0 sm:mt-5 order-3 sm:order-2 md:mt-0">
@@ -67,7 +67,7 @@ function Home() {
             </h1>
           </div>
 
-          <div className="lg:ml-10">
+          <div className="">
             <div className="image_style_div">
               <img src={geraldfakaa} className="image_style" alt="" />
             </div>

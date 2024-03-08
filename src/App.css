@@ -129,7 +129,6 @@
     height: 250px;
     border-radius: 50%;
     border: 1px solid white;
-    display: inline-block;
     animation: slideInRight 1s forwards;
   }
 
@@ -235,6 +234,7 @@ border-bottom: 1px solid var(--body_color);
   .section_one {
     display: grid;
     grid-template-columns: 2.5fr 1fr;
+    gap: 10px;
   }
 
   .socials_section{
@@ -300,11 +300,15 @@ border-bottom: 1px solid var(--body_color);
   }
 
   .bio_details{
-    display: inline-block;
     animation: slideInRight 1s forwards;
   }
 
-  @media (max-width: 640px) and (max-width: 1440px) {
+  @media (max-width: 640px) and (max-width: 812px) {
+
+    .md_nav_style{
+      margin: 0 auto;
+    }
+
     .dev_title {
       font-size: 50px;
       color: white;
@@ -408,6 +412,112 @@ border-bottom: 1px solid var(--body_color);
     margin-top: 20px;
   }
   }
+
+
+  /* @media (max-width: 425px) and (max-width: 391px) {
+    .dev_title {
+      font-size: 50px;
+      color: white;
+      line-height: 55px;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-weight: bold;
+      color: var(--button_bgcolor);
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 10px;
+      margin-bottom: 50px;
+    }
+
+    .bg_container {
+      background-color: var(--body_background);
+      width: 100vw;
+      height: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      overflow: hidden;
+      padding-bottom: 30px;
+    }
+
+    .image_style_div {
+      margin-top: 50px;
+      margin: 0 auto;
+    }
+
+    .section_one {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .font_fam2 {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: 70px;
+      line-height: 80px;
+    }
+
+    .font_fam {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: 70px;
+      line-height: 120px;
+    }
+
+    .project_content_div2 {
+      width: 100%;
+      background-color: var(--button_bgcolor);
+      height: 210px;
+      padding: 10px;
+      margin-top: 50px;
+    }
+
+    .project_content_div2 img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .skill_content {
+      padding: 0;
+      gap: 20px;
+    }
+
+    .picture_frame {
+      margin-top: 30px;
+      height: 400px;
+      width: 100%;
+      background-color: var(--button_bgcolor);
+    }
+
+    .inquires_section_p {
+      width: 100%;
+    }
+
+    .inquires_section {
+      margin-top: 110px;
+
+    }
+
+  .COLLABORATE_p {
+    font-size: 60px;
+    color: var(--button_bgcolor);
+    white-space: nowrap;
+    animation: moveText 10s linear infinite;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  .socials_section{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .md_h3_style2{
+    margin-top: 20px;
+  }
+
+  .md_lastdiv_style{
+    margin-top: 20px;
+  }
+  } */
 
   @media (min-width: 768px) and (max-width: 991px) {
     .dev_title {
