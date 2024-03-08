@@ -9,12 +9,18 @@ import projectImg3 from "../Photos/cinetube.png";
 import geraldfakaa from "../Photos/geraldfakaa.jpeg";
 import geraldfakaa2 from "../Photos/WhatsApp Image 2024-02-23 at 11.42.26 AM.jpeg";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import pDF from "../PDF/ResumeFakaaGerald.PDF";
 
 function Home() {
   const [mode, setMode] = useState();
   const [darkMode, setDarkMode] = useState(false);
+
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const toggleTheme = () => {
     setDarkMode(!darkMode);

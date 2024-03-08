@@ -129,7 +129,11 @@
     height: 250px;
     border-radius: 50%;
     border: 1px solid white;
+    display: inline-block;
+    animation: slideInRight 1s forwards;
   }
+
+
 
   .image_style2 {
     width: 95%;
@@ -230,7 +234,7 @@ border-bottom: 1px solid var(--body_color);
 
   .section_one {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
   }
 
   .socials_section{
@@ -280,8 +284,9 @@ border-bottom: 1px solid var(--body_color);
     }
   }
 
+
   .dev_title_container {
-    overflow:visible;
+    overflow: hidden;
   }
   
   .dev_title_span {
@@ -294,10 +299,12 @@ border-bottom: 1px solid var(--body_color);
     animation: slideInRight 1s forwards;
   }
 
-  @media (max-width: 640px) {
+  .bio_details{
+    display: inline-block;
+    animation: slideInRight 1s forwards;
+  }
 
-
-
+  @media (max-width: 640px) and (max-width: 1440px) {
     .dev_title {
       font-size: 50px;
       color: white;
@@ -400,9 +407,6 @@ border-bottom: 1px solid var(--body_color);
   .md_lastdiv_style{
     margin-top: 20px;
   }
-
-
-
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
