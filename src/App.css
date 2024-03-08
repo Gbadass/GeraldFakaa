@@ -537,7 +537,7 @@
     }
 
     .project_content_div2 {
-      width: 100%;
+      width: 100% !important;
       background-color: var(--button_bgcolor);
       height: 370px;
       padding: 20px;
@@ -545,8 +545,8 @@
     }
 
     .project_content_div2 img {
-      width: 100%;
-      height: 100%;
+      width: 100% !important;
+      height: 100% !important;
     }
 
     .section_one {
@@ -613,8 +613,33 @@
       /* margin-top: 50px; */
     }
 
-
   }
+
+
+  @media only screen and (min-width: 1280px)  {
+    .project_content_div2 img{
+      overflow: hidden;
+      width: 100% !important;
+      height: 100% !important;
+    }
+    
+        .dev_title{
+          width: 100%;
+          font-size:200px !important;
+        }
+    
+        .project_content_div2 {
+          width: 100%;
+          background-color: var(--button_bgcolor);
+          height: 390px !important;
+          padding: 20px;
+          /* margin-top: 50px; */
+        }
+    
+      }
+    
+
+
 
 
 
