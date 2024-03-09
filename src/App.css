@@ -29,9 +29,6 @@
 }
 
 @layer components {
-
-
-
   .bg_container {
     background-color: var(--body_background);
     width: 100vw;
@@ -301,8 +298,6 @@
   }
 
   @media (max-width: 640px) and (max-width: 812px) {
-
-
     .dev_title {
       font-size: 50px;
       color: white;
@@ -396,17 +391,17 @@
       margin: 0 auto;
     }
 
-    .md_h3_style2{
-    margin-top: 20px;
-    margin-left: 70px;
+    .md_h3_style2 {
+      margin-top: 20px;
+      margin-left: 70px;
+    }
+
+    .md_lastdiv_style {
+      margin-top: 20px;
+    }
   }
 
-  .md_lastdiv_style{
-    margin-top: 20px;
-  }
-  }
-
-  /* @media (max-width: 425px) and (max-width: 391px) {
+  @media (max-width: 320px) {
     .dev_title {
       font-size: 50px;
       color: white;
@@ -418,6 +413,15 @@
       margin: 0 auto;
       padding-top: 10px;
       margin-bottom: 50px;
+    }
+
+    .md_h3_style3 {
+      padding: 0 !important;
+    }
+
+    .md_nav_style {
+      padding: 0 !important;
+      margin: 0 !important;
     }
 
     .bg_container {
@@ -442,13 +446,13 @@
 
     .font_fam2 {
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-      font-size: 70px;
-      line-height: 80px;
+      font-size: 50px;
+      line-height: 60px;
     }
 
     .font_fam {
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-      font-size: 70px;
+      font-size: 50px;
       line-height: 120px;
     }
 
@@ -483,33 +487,32 @@
 
     .inquires_section {
       margin-top: 110px;
-
     }
 
-  .COLLABORATE_p {
-    font-size: 60px;
-    color: var(--button_bgcolor);
-    white-space: nowrap;
-    animation: moveText 10s linear infinite;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+    .COLLABORATE_p {
+      font-size: 60px;
+      color: var(--button_bgcolor);
+      white-space: nowrap;
+      animation: moveText 10s linear infinite;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
 
+    .socials_section {
+      width: 100%;
+      margin: 0 auto;
+    }
 
-  .socials_section{
-    width: 100%;
-    margin: 0 auto;
-  }
+    .md_h3_style2 {
+      margin-top: 20px;
+      margin-left: 70px;
+    }
 
-  .md_h3_style2{
-    margin-top: 20px;
+    .md_lastdiv_style {
+      margin-top: 20px;
+    }
   }
-
-  .md_lastdiv_style{
-    margin-top: 20px;
-  }
-  } */
 
   @media (min-width: 768px) and (max-width: 991px) {
     .dev_title {
@@ -593,16 +596,16 @@
     }
   }
 
-  @media only screen and (min-width: 1440px)  {
-.project_content_div2 img{
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-
-    .dev_title{
+  @media only screen and (min-width: 1440px) {
+    .project_content_div2 img {
+      overflow: hidden;
       width: 100%;
-      font-size:220px !important;
+      height: 100%;
+    }
+
+    .dev_title {
+      width: 100%;
+      font-size: 220px !important;
     }
 
     .project_content_div2 {
@@ -612,55 +615,46 @@
       padding: 20px;
       /* margin-top: 50px; */
     }
-
   }
 
-
-  @media only screen and (min-width: 1280px)  {
-    .project_content_div2 img{
+  @media only screen and (min-width: 1280px) {
+    .project_content_div2 img {
       overflow: hidden;
       width: 100% !important;
       height: 100% !important;
     }
-    
-        .dev_title{
-          width: 100%;
-          font-size:200px !important;
-        }
-    
-        .project_content_div2 {
-          width: 100%;
-          background-color: var(--button_bgcolor);
-          height: 390px !important;
-          padding: 20px;
-          /* margin-top: 50px; */
-        }
-    
-      }
-    
 
+    .dev_title {
+      width: 100%;
+      font-size: 200px !important;
+    }
 
+    .project_content_div2 {
+      width: 100%;
+      background-color: var(--button_bgcolor);
+      height: 390px !important;
+      padding: 20px;
+      /* margin-top: 50px; */
+    }
+  }
 
-
-
-  @media only screen and (min-width:1024px){
-    .section_one{
+  @media only screen and (min-width: 1024px) {
+    .section_one {
       display: grid;
       grid-template-columns: 2.5fr 1fr;
     }
-  
-    .dev_title{
+
+    .dev_title {
       width: 100%;
       /* color: red; */
       font-size: 150px;
     }
 
-    .font_fam{
+    .font_fam {
       font-size: 70px;
     }
 
-
-    .font_fam2{
+    .font_fam2 {
       font-size: 70px;
     }
 
@@ -672,7 +666,3 @@
     }
   }
 }
-
-
-
-
